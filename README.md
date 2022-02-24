@@ -26,7 +26,7 @@ You'll want to make a few modifications to some of the environment variables.
 | QUX_MONGO_DB  | quantux  | The name of the mongo database to be used by the application  |
 | QUX_MONGO_TABLE  | quantux  | The name of the mongo table prefix to be used by the application  |
 | QUX_MAIL_USER  | admin@example.com  | The username for your smtp server  |
-| QUX_MAiL_PASSWORD  | pa%%W0rD!  | The password for your smtp server user  |
+| QUX_MAIL_PASSWORD  | pa%%W0rD!  | The password for your smtp server user  |
 | QUX_MAIL_HOST  | mail.example.com or smtp.example.com  | The host url of your smtp server  |
 | QUX_JWT_PASSWORD | some-long-string-of-mix-case-chars-and-nums  | This is a java web token secret, and should be a very long password. You can use the generator at https://jwt.io/ and select RS256 for a very strong token. Never share this token with anyone.  |
 | QUX_IMAGE_FOLDER_USER  | /qux-images  | A folder path for image storage in the container.  |
