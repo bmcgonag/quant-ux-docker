@@ -11,7 +11,7 @@ To use the docker-compose.yml file, you can download just the compose file with 
 
 `wget https://raw.githubusercontent.com/bmcgonag/quant-ux-docker/main/docker-compose.yml`
 
-Or, you can clone the repository with teh command 
+Or, you can clone the repository with the command 
 
 `git clone https://github.com/bmcgonag/quant-ux-docker.git`
 
