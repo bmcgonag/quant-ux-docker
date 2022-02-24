@@ -7,9 +7,9 @@ I started working to make this into a dockerized application as a way to help en
 The DockerFiles use the smallest images I could find as a base, and the docker-compose is really setup to allow for the easiest deployment possible. 
 
 ## Docker-Compose Details
-To uset he docker-compose.yml file, you can download just the compose file with the command:
+To use the docker-compose.yml file, you can download just the compose file with the command:
 
-` `
+`wget https://raw.githubusercontent.com/bmcgonag/quant-ux-docker/main/docker-compose.yml`
 
 Or, you can clone the repository with teh command 
 
