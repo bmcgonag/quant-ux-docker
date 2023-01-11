@@ -23,7 +23,8 @@ ENV QUX_HTTP_HOST=quant.example.com \
     QUX_MAIL_HOST=mail.example.com \
     QUX_JWT_PASSWORD=some-log-string-of-randomized-numbers-characters \
     QUX_IMAGE_FOLDER_USER=/qux-images \
-    QUX_IMAGE_FOLDER_APPS=/qux-image-apps
+    QUX_IMAGE_FOLDER_APPS=/qux-image-apps\
+    QUX_DEBUG=false
 
 ## Clone Quant-ux backend repo with pre-built java backend
 RUN git clone https://github.com/KlausSchaefers/qux-java.git
