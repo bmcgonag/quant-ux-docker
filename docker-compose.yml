@@ -36,6 +36,7 @@ services:
       - QUX_JWT_PASSWORD=some-long-string-of-mix-case-chars-and-nums        # you should change this to a real JWT secret
       - QUX_IMAGE_FOLDER_USER=/qux-images        # just a folder name, change if you like
       - QUX_IMAGE_FOLDER_APPS=/qux-image-apps        # just a folder name, change if you like
+      - QUX_DEBUG=false        # valid values are true or false
       - TZ=America/Chicago        # change to your timezone
     depends_on:
       - mongo
