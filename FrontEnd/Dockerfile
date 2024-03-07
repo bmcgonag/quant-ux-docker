@@ -18,7 +18,12 @@ ENV TZ=America/Chicago
 ENV QUX_PROXY_URL=http://qux-be.quantux.com:8080
 
 ## Clone the frontend repo
+RUN apk --no-cache --virtual build-dependencies add \
+        python3 \
+        make \
+        g++
 RUN git clone https://github.com/KlausSchaefers/quant-ux.git
+
 
 RUN cd quant-ux && npm install && npm run build
 
