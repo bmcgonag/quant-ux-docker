@@ -6,6 +6,8 @@ I started working to make this into a dockerized application as a way to help en
 
 The DockerFiles use the smallest images I could find as a base, and the docker-compose is really setup to allow for the easiest deployment possible. 
 
+I recently added arm64 builds, but don't currently have a way to test them. They built successfully, but that's a far cry from tested and functional.  I'm adding the necessary changes to the compose file if you want to use the arm64 images. 
+
 ## Docker-Compose Details
 To use the docker-compose.yml file, you can download just the compose file with the command:
 

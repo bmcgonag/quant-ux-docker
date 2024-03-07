@@ -6,6 +6,17 @@ RUN apk --no-cache add git
 # install bash
 RUN apk --no-cache add bash
 
+RUN apk --no-cache add build-base
+
+# Install make
+RUN apk --no-cache add make
+
+# Install python/pip
+ENV PYTHONUNBUFFERED=1
+RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
+#RUN python3 -m ensurepip
+#RUN pip3 install --no-cache --upgrade pip setuptools
+
 RUN mkdir -p /usr/src/quant-ux
 
 WORKDIR /usr/src/quant-ux

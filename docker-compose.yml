@@ -11,6 +11,7 @@ services:
     restart: always
     container_name: quant-ux-frontend
     image: bmcgonag/qux-fe
+    # image: bmcgonag/qux-fe-arm64
     environment:
       - QUX_PROXY_URL=http://quant-ux-backend:8080        # this is the path the front end uses to talk tot he backend
     links:
@@ -24,6 +25,7 @@ services:
     restart: always
     container_name: quant-ux-backend
     image: bmcgonag/qux-be
+    # image: bmcgonag/qux-be-arm64
     environment:
       - QUX_HTTP_HOST=http://quant-ux-frontend:8082        # this is the path the backend uses to talk to the front end
       - QUX_HTTP_PORT=8080        # This is the port the backend will use
